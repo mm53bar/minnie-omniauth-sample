@@ -1,9 +1,5 @@
 class SessionsController < ApplicationController
-  skip_before_filter :authenticate_user!, :only => [:new, :create]
-
-  def new
-    redirect_to '/auth/twitter'
-  end
+  skip_before_filter :authenticate_user!, :only => [:create]
 
   def create
     @user = User.authenticate(auth_hash)
