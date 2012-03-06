@@ -10,6 +10,7 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'minnie'
 gem 'minnie-omniauth'
+gem 'foreman'
 
 # Gems used only for assets and not required
 # in production environments by default.
